@@ -16,4 +16,8 @@ class Author
     last = Post.new(title)
     last.author = self
   end
+  
+  def post_count
+    Post.all.length
+  end
 end
